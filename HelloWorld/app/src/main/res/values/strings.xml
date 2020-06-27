@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="button_Textview">TextView</string>
+    <string name="textview_text">GSNICE 在奔跑</string>
+    <string name="textview_light">GSNICE 在奔跑~GSNICE 在奔跑~GSNICE 在奔跑~GSNICE 在奔跑</string>
+
+    <string name="button_Button">Button</string>
+
+    <string name="button_EditText">EditText</string>
+
+    <string name="button_RadioButton">RadioButton</string>
+
+    <string name="button_CheckBox">CheckBox</string>
+
+    <string name="button_CheckBox_Text">你会哪些移动开发：</string>
+</resources>
