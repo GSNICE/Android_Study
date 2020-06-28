@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ToggleButton
+        android:id="@+id/tb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="按钮没有被选中时显示的文字"
+        android:textOn="按钮被选中时显示的文字"
+        android:checked="true"
+        />
+
+    <Switch
+        android:id="@+id/switch_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_1"
+        android:layout_marginTop="10dp"
+        android:showText="true"
+        android:textOn="开启"
+        android:textOff="关闭"
+        android:splitTrack="true"
+        />
+</RelativeLayout>

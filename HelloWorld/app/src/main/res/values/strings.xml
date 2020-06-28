@@ -13,4 +13,6 @@
     <string name="button_CheckBox">CheckBox</string>
 
     <string name="button_CheckBox_Text">你会哪些移动开发：</string>
+
+    <string name="button_ImageView">ImageView</string>
 </resources>

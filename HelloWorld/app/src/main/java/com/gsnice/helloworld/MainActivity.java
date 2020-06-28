@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     private Button button_EditText;
     private Button button_RadioButton;
     private Button button_CheckBox;
+    private Button button_ImageView;
+    private Button button_ToggleButton;
+    private Button button_SeekBar;
+    private Button button_ScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,18 @@ public class MainActivity extends AppCompatActivity {
         //  CheckBox
         button_CheckBox = findViewById(R.id.button_CheckBox);
 
+        //  ImageView
+        button_ImageView = findViewById(R.id.button_ImageView);
+
+        //  ToggleButton
+        button_ToggleButton = findViewById(R.id.button_ToggleButton);
+
+        //  SeekBar
+        button_SeekBar = findViewById(R.id.button_SeekBar);
+
+        //  ScrollView
+        button_ScrollView = findViewById(R.id.button_ScrollView);
+
         setListeners();
     }
 
@@ -44,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
         button_EditText.setOnClickListener(onClick);
         button_RadioButton.setOnClickListener(onClick);
         button_CheckBox.setOnClickListener(onClick);
+        button_ImageView.setOnClickListener(onClick);
+        button_ToggleButton.setOnClickListener(onClick);
+        button_SeekBar.setOnClickListener(onClick);
+        button_ScrollView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -66,6 +86,19 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case  R.id.button_CheckBox:
                     intent = new Intent(MainActivity.this, CheckBoxActivity.class);
+                    break;
+                case R.id.button_ImageView:
+                    intent = new Intent(MainActivity.this,ImageViewActivity.class);
+                    break;
+                case R.id.button_ToggleButton:
+                    intent = new Intent(MainActivity.this,ToggleButtonActivity.class);
+                    break;
+                case R.id.button_SeekBar:
+                    intent = new Intent(MainActivity.this,SeekBarActivity.class);
+                    break;
+                case R.id.button_ScrollView:
+                    intent = new Intent(MainActivity.this,ScrollViewActivity.class);
+                    break;
             }
             startActivity(intent);
         }
