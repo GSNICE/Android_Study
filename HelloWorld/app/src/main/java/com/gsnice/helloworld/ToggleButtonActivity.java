@@ -30,17 +30,17 @@ public class ToggleButtonActivity extends AppCompatActivity implements CompoundB
         switch (compoundButton.getId()) {
             case R.id.tb_1: {
                 if(compoundButton.isChecked()) {
-                    Toast.makeText(this, "开关:ON", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ToggleButton 开关:ON", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(this,"开关:OFF",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this,"ToggleButton 开关:OFF",Toast.LENGTH_SHORT).show();
                 }
             }
                 break;
             case R.id.switch_1: {
-                if(compoundButton.isChecked()) {
-                    Toast.makeText(this, "开关:ON", Toast.LENGTH_SHORT).show();
+                if(!compoundButton.isChecked()) {
+                    Toast.makeText(this,"Switch 开关:OFF",Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(this,"开关:OFF",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Switch 开关:ON", Toast.LENGTH_SHORT).show();
                 }
             }
                 break;

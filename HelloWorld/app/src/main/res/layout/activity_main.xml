@@ -85,4 +85,12 @@
         android:layout_marginTop="10dp"
         android:textAllCaps="false"
         />
+
+    <Button
+        android:id="@+id/button_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_ListView"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
 </LinearLayout>

@@ -24,7 +24,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:layout_below="@id/scroll_button_down">
+        android:layout_below="@id/scroll_button_down"
+        android:scrollbars="none">
         <TextView
             android:id="@+id/scrollView_textView"
             android:layout_width="match_parent"

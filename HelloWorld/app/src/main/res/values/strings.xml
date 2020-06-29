@@ -22,4 +22,6 @@
 
     <string name="button_ScrollView">ScrollView</string>
 
+    <string name="button_ListView">ListView</string>
+
 </resources>

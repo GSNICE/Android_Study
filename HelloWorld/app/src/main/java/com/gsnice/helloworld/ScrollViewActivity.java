@@ -32,6 +32,7 @@ public class ScrollViewActivity extends AppCompatActivity implements View.OnClic
         getButton_scroll_down.setOnClickListener(this);
 
         scrollView_1 = findViewById(R.id.scrollView_1);
+//        scrollView_1.setVerticalScrollBarEnabled(false);
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0 ;i <= 100;i++) {
@@ -44,13 +45,13 @@ public class ScrollViewActivity extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.button_1:
-                //
-                scrollView_1.fullScroll(ScrollView.FOCUS_DOWN);
-                break;
-            case R.id.button_2:
+            case R.id.scroll_button_up:
                 //
                 scrollView_1.fullScroll(ScrollView.FOCUS_UP);
+                break;
+            case R.id.scroll_button_down:
+                //
+                scrollView_1.fullScroll(ScrollView.FOCUS_DOWN);
                 break;
         }
     }

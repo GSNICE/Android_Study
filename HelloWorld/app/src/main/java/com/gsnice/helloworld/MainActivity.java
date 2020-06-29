@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button_ToggleButton;
     private Button button_SeekBar;
     private Button button_ScrollView;
+    private Button button_ListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
         //  ScrollView
         button_ScrollView = findViewById(R.id.button_ScrollView);
 
+        //  ListView
+        button_ListView = findViewById(R.id.button_ListView);
+
         setListeners();
     }
 
@@ -64,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         button_ToggleButton.setOnClickListener(onClick);
         button_SeekBar.setOnClickListener(onClick);
         button_ScrollView.setOnClickListener(onClick);
+        button_ListView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -98,6 +103,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.button_ScrollView:
                     intent = new Intent(MainActivity.this,ScrollViewActivity.class);
+                    break;
+                case R.id.button_ListView:
+                    intent = new Intent(MainActivity.this,ListViewActivity.class);
                     break;
             }
             startActivity(intent);
