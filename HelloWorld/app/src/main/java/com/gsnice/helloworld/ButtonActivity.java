@@ -51,7 +51,12 @@ public class ButtonActivity extends AppCompatActivity implements View.OnClickLis
             }
                 break;
             case R.id.button_3 :
-                Toast.makeText(ButtonActivity.this,"按钮3被点击了",Toast.LENGTH_LONG).show();
+                if (button.getText().toString().equals("不可点击")) {
+                    button.setEnabled(false);
+                }else {
+                    button.setEnabled(true);
+                    Toast.makeText(ButtonActivity.this,"按钮3被点击了",Toast.LENGTH_LONG).show();
+                }
                 break;
             case R.id.textview_1:
                 Toast.makeText(ButtonActivity.this,"TextView 被点击了", Toast.LENGTH_SHORT).show();

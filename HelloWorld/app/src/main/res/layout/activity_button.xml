@@ -29,7 +29,7 @@
         android:id="@+id/button_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="按钮3"
+        android:text="不可点击"
         android:textColor="#FF9900"
         android:textSize="20sp"
         android:background="@drawable/bg_btn3"
@@ -48,11 +48,23 @@
         android:background="@drawable/bg_btn4"
         android:onClick="showToast"/>
 
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮5"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@id/button_4"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bbuton_danger_rounded"
+        android:onClick="showToast"/>
+
     <TextView
         android:id="@+id/textview_1"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_below="@id/button_4"
+        android:layout_below="@id/button_5"
         android:background="#FFAD33"
         android:layout_marginTop="10dp"
         android:text="TextView"
